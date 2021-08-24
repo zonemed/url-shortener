@@ -66,7 +66,7 @@
               ?>
                 <div class="data">
                 <li>
-                  <a href="<?php echo $domain.$row['shorten_url'] ?>" target="_blank">
+                  <div href="<?php echo $domain.$row['shorten_url'] ?>" target="_blank">
                   <?php
                     if($domain.strlen($row['shorten_url']) > 50){
                       echo $domain.substr($row['shorten_url'], 0, 50) . '...';
@@ -74,7 +74,7 @@
                       echo $domain.$row['shorten_url'];
                     }
                   ?>
-                  </a>
+                  </div>
                 </li> 
                 <li>
                   <?php
